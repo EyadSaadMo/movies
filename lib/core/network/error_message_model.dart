@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter/cupertino.dart';
+
 
 class ErrorMessageModel extends Equatable {
   final String statusMessage;
@@ -7,9 +7,9 @@ class ErrorMessageModel extends Equatable {
   final bool success;
 
   const ErrorMessageModel(
-      {@required this.statusMessage,
-      @required this.statusCode,
-      @required this.success});
+      {required this.statusMessage,
+      required this.statusCode,
+      required this.success});
 
   factory ErrorMessageModel.fromJson(Map<String, dynamic> json) =>
       ErrorMessageModel(
